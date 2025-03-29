@@ -50,7 +50,7 @@ async function Home() {
         <div className="interviews-section">
           {hasPastInterviews ? (
             userInterviews?.map((interview) => (
-              <InterviewCard //{...interview}
+              <InterviewCard
                 key={interview.id}
                 userId={user?.id}
                 interviewId={interview.id}
